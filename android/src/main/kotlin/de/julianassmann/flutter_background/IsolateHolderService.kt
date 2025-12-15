@@ -128,7 +128,7 @@ class IsolateHolderService : Service() {
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.UPSIDE_DOWN_CAKE) {
             // Use all foreground service types set in the manifest file
-            startForeground(1, notification, ServiceInfo.FOREGROUND_SERVICE_TYPE_MANIFEST);
+            startForeground(1, notification, ServiceInfo.FOREGROUND_SERVICE_TYPE_MEDIA_PROJECTION);
         } else {
             startForeground(1, notification)
         }
